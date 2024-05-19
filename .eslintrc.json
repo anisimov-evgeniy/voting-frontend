@@ -1,0 +1,421 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "array-bracket-newline": [
+      "warn",
+      "consistent"
+    ],
+    "array-bracket-spacing": [
+      "warn",
+      "never"
+    ],
+    "array-element-newline": [
+      "warn",
+      "consistent"
+    ],
+    "arrow-spacing": "warn",
+    "brace-style": [
+      "warn",
+      "1tbs",
+      {
+        "allowSingleLine": false
+      }
+    ],
+    "computed-property-spacing": [
+      "warn",
+      "never"
+    ],
+    "curly": "warn",
+    "default-case": "warn",
+    "eol-last": [
+      "warn",
+      "always"
+    ],
+    "eqeqeq": "warn",
+    "func-call-spacing": [
+      "warn",
+      "never"
+    ],
+    "jsx-quotes": [
+      "warn",
+      "prefer-double"
+    ],
+    "indent": "off",
+    "key-spacing": [
+      "warn",
+      {
+        "afterColon": true
+      }
+    ],
+    "keyword-spacing": "warn",
+    "lines-between-class-members": [
+      "warn",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 120,
+        "tabWidth": 2,
+        "ignoreComments": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "multiline-ternary": [
+      "warn",
+      "always-multiline"
+    ],
+    "newline-per-chained-call": [
+      "warn",
+      {
+        "ignoreChainWithDepth": 2
+      }
+    ],
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "no-else-return": "warn",
+    "no-multi-spaces": "warn",
+    "no-multiple-empty-lines": [
+      "warn",
+      {
+        "max": 1,
+        "maxEOF": 0,
+        "maxBOF": 0
+      }
+    ],
+    "no-trailing-spaces": "warn",
+    "no-unneeded-ternary": "warn",
+    "operator-linebreak": [
+      "warn",
+      "before"
+    ],
+    "object-curly-newline": [
+      "warn",
+      {
+        "ImportDeclaration": "never",
+        "ObjectExpression": {
+          "multiline": true
+        },
+        "ObjectPattern": {
+          "multiline": true
+        }
+      }
+    ],
+    "object-curly-spacing": [
+      "warn",
+      "always"
+    ],
+    "object-property-newline": [
+      "warn",
+      {
+        "allowAllPropertiesOnSameLine": true
+      }
+    ],
+    "space-before-blocks": "warn",
+    "space-before-function-paren": [
+      "warn",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "never"
+      }
+    ],
+    "space-in-parens": "warn",
+    "template-curly-spacing": [
+      "warn",
+      "never"
+    ],
+    "import/newline-after-import": [
+      "warn",
+      {
+        "count": 1
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/order": [
+      "warn",
+      {
+        "newlines-between": "always",
+        "groups": [
+          [
+            "builtin",
+            "external"
+          ],
+          [
+            "sibling",
+            "parent",
+            "index",
+            "internal"
+          ]
+        ]
+      }
+    ],
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/destructuring-assignment": [
+      "warn",
+      "always"
+    ],
+    "react/jsx-boolean-value": [
+      "warn",
+      "never"
+    ],
+    "react/jsx-closing-bracket-location": [
+      "warn",
+      "line-aligned"
+    ],
+    "react/jsx-curly-newline": [
+      "warn",
+      {
+        "multiline": "require",
+        "singleline": "consistent"
+      }
+    ],
+    "react/jsx-curly-spacing": [
+      "warn",
+      {
+        "when": "never",
+        "children": {
+          "when": "never"
+        }
+      }
+    ],
+    "react/jsx-equals-spacing": [
+      "warn",
+      "never"
+    ],
+    "react/jsx-max-props-per-line": [
+      "warn",
+      {
+        "maximum": 1,
+        "when": "multiline"
+      }
+    ],
+    "react/jsx-newline": [
+      "warn",
+      {
+        "prevent": true
+      }
+    ],
+    "react/jsx-sort-props": [
+      "warn",
+      {
+        "shorthandFirst": true,
+        "callbacksLast": true,
+        "noSortAlphabetically": false
+      }
+    ],
+    "react/jsx-tag-spacing": [
+      "warn",
+      {
+        "beforeSelfClosing": "always",
+        "beforeClosing": "never",
+        "afterOpening": "never",
+        "closingSlash": "never"
+      }
+    ],
+    "react/jsx-wrap-multilines": [
+      "warn",
+      {
+        "return": "parens-new-line",
+        "condition": "parens-new-line",
+        "logical": "parens-new-line"
+      }
+    ],
+    "react/self-closing-comp": [
+      "warn",
+      {
+        "component": true
+      }
+    ],
+    "@typescript-eslint/adjacent-overload-signatures": "warn",
+    "@typescript-eslint/comma-spacing": [
+      "warn",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "@typescript-eslint/indent": [
+      "warn",
+      2,
+      {
+        "CallExpression": {
+          "arguments": "first"
+        },
+        "FunctionDeclaration": {
+          "parameters": "first"
+        },
+        "FunctionExpression": {
+          "parameters": "first"
+        },
+        "SwitchCase": 1,
+        "StaticBlock": {
+          "body": 1
+        },
+        "offsetTernaryExpressions": true
+      }
+    ],
+    "@typescript-eslint/member-delimiter-style": [
+      "warn",
+      {
+        "multiline": {
+          "delimiter": "semi",
+          "requireLast": false
+        },
+        "singleline": {
+          "delimiter": "semi",
+          "requireLast": false
+        }
+      }
+    ],
+    "@typescript-eslint/member-ordering": [
+      "warn",
+      {
+        "classes": [
+          "field",
+          "constructor",
+          "get",
+          "method",
+          "private-method"
+        ]
+      }
+    ],
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "warn",
+    "@typescript-eslint/padding-line-between-statements": [
+      "warn",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "export"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      },
+      {
+        "blankLine": "never",
+        "prev": "if",
+        "next": "const"
+      },
+      {
+        "blankLine": "always",
+        "prev": [
+          "interface",
+          "type"
+        ],
+        "next": "*"
+      }
+    ],
+    "@typescript-eslint/space-infix-ops": "warn",
+    "@typescript-eslint/type-annotation-spacing": [
+      "warn",
+      {
+        "before": false,
+        "after": true,
+        "overrides": {
+          "arrow": {
+            "before": true,
+            "after": true
+          }
+        }
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json"
+        ],
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "ecmaVersion": 12,
+        "createDefaultProgram": true
+      },
+      "rules": {
+        "quotes": [
+          "error",
+          "single",
+          {
+            "allowTemplateLiterals": true
+          }
+        ],
+        "import/no-unresolved": "off",
+
+        "semi": "off",
+        "react/display-name": "off",
+        "react/prop-types": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/semi": [
+          "warn",
+          "always"
+        ],
+        "@typescript-eslint/no-unused-vars": [
+          "warn"
+        ]
+      }
+    }
+  ],
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+
+      "pragma": "React",
+      "fragment": "Fragment",
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    },
+    "propWrapperFunctions": [
+
+      "forbidExtraProps",
+      {
+        "property": "freeze",
+        "object": "Object"
+      },
+      {
+        "property": "myFavoriteWrapper"
+      }
+    ]
+  }
+}
