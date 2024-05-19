@@ -1,5 +1,5 @@
 # React Voting Project
-Works with hardhat-voting-contract
+Works with voting-hardhat
 
 # Getting Started with Create React App
 
