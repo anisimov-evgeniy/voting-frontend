@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import { Button, notification, Typography } from 'antd';
 
-import { contractAbi, contractAddress } from './const';
+import { contractAbi, contractAddress } from './contractData/contractData';
 import VoteForm from './Components/VoteForm/VoteForm';
 import { CandidateType } from './types/types';
 import './App.css';
